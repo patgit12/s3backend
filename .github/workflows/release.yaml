@@ -7,7 +7,7 @@ jobs:
     permissions:
       contents: write
       issues: write
-      pull-requests: write
+      pull-requests: write ### make sure not use pull_requests instead of pull-requests
     runs-on: ubuntu-latest
     steps:
       - name: checkout
@@ -16,4 +16,4 @@ jobs:
         run: npx semantic-release
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
-          #
+          
