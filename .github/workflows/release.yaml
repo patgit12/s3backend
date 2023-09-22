@@ -8,7 +8,7 @@ jobs:
       contents: write
       issues: write
       pull-requests: write ### make sure not use pull_requests instead of pull-requests
-      repository-projects: write
+      
     runs-on: ubuntu-latest
     steps:
       - name: checkout
