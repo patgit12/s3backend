@@ -7,7 +7,7 @@ variable "region" {
   default = "us-west-2"
 }
 
-variable "version" {
+variable "versioning" {
   type = string
   default = "enabled"
   
