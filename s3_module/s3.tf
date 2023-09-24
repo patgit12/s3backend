@@ -36,7 +36,7 @@ resource "random_integer" "backend" {
 resource "aws_s3_bucket_versioning" "versioning_example" {
   bucket = aws_s3_bucket.s3backend.id
   versioning_configuration {
-    status = var.version
+    status = var.versioning
   }
 }
 
