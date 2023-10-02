@@ -14,7 +14,7 @@ jobs:
       - name: checkout
         uses: actions/checkout@v3
       - name: release
-        run: npm install --save-dev semantic-release
+        run: chicj
       - run: npm install semantic-release @semantic-release/git @semantic-release/github -D
       - run: npx semantic-release      
         env:

@@ -1,1 +1,4 @@
 *terrafor*
+*.log
+*plan.json
+*.tfplan

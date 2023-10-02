@@ -16,7 +16,7 @@ terraform validate
 #tfsec . # tfsec has already been installed using choco
 terraform plan -out=${TF_PLAN}
 terraform show -json ${TF_PLAN} > ${TF_PLAN}.json
-checkov -f ${TF_PLAN}.json --skip-check LOW
+checkov -f ${TF_PLAN}.json  --skip-check LOW
 if [ "$?" -eq "0" ]
 then
   echo "Your configuration is valid"

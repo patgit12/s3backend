@@ -8,7 +8,7 @@ variable "region" {
 }
 
 variable "versioning" {
-  type = string
+  type    = string
   default = "Enabled"
-  
+
 }

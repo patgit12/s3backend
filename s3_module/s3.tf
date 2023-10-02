@@ -1,6 +1,6 @@
 resource "aws_s3_bucket" "s3backend" {
   bucket = "bootcamp32-${lower(var.env)}-${random_integer.backend.result}" # make sure the bucket name is all lowercase. the lower() function
- # from terraform can help out - google terraform function for more info
+  # from terraform can help out - google terraform function for more info
   tags = {
     Name        = "My bucket"
     Environment = "Dev"
